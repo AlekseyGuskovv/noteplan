@@ -289,3 +289,26 @@ body {
     padding: 6px;
   }
 }
+.calendar-day.today:not(.selected) {
+  outline: 2px solid #c66d54;
+  outline-offset: -2px;
+}
+
+.calendar-controls .today-button {
+  width: auto;
+  padding: 0 14px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #a8543f;
+  background: #f3dfd2;
+}
+
+.calendar-controls .today-button:hover {
+  background: #edcfbe;
+}
+
+.calendar-day:focus-visible,
+.calendar-controls button:focus-visible {
+  outline: 2px solid #352b26;
+  outline-offset: 2px;
+}

@@ -1,9 +1,20 @@
-export default function NoteEditor() {
+
+type NoteEditorProps = {
+  selectedDate: Date
+}
+
+export default function NoteEditor({ selectedDate }: NoteEditorProps) {
+  const formattedDate = selectedDate.toLocaleDateString('ru-RU', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
+
   return (
     <section className="note-editor">
       <div className="editor-header">
         <p className="editor-subtitle">Заметки на день</p>
-        <h2>11 ноября 2026</h2>
+        <h2>{formattedDate}</h2>
       </div>
 
       <div className="editor-content">
