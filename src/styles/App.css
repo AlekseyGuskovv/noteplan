@@ -312,3 +312,120 @@ body {
   outline: 2px solid #352b26;
   outline-offset: 2px;
 }
+.notes-list {
+  margin-top: 32px;
+  border-top: 1px solid #eee4da;
+  padding-top: 24px;
+}
+
+.notes-list h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  color: #352b26;
+}
+
+.notes-empty {
+  color: #a18c7e;
+  font-size: 14px;
+}
+
+.note-card {
+  padding: 18px;
+  margin-bottom: 12px;
+  background: #f8f0e9;
+  border-radius: 12px;
+}
+
+.note-card h4 {
+  margin: 12px 0 8px;
+  color: #352b26;
+  font-size: 16px;
+}
+
+.note-card p {
+  margin: 0;
+  color: #62564f;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.note-category {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.note-category.personal {
+  background: #f3dfd2;
+  color: #a8543f;
+}
+
+.note-category.work {
+  background: #dce8d4;
+  color: #527046;
+}
+
+.note-category.study {
+  background: #e7ddf5;
+  color: #76559d;
+}
+/* Кнопки редактирования и удаления */
+.note-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.note-actions button,
+.editor-cancel {
+  padding: 9px 12px;
+  border: 1px solid #e8d9cc;
+  border-radius: 8px;
+  background: #fffaf5;
+  color: #62564f;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.note-actions button:hover,
+.editor-cancel:hover {
+  background: #f3dfd2;
+}
+
+.note-actions .delete-button {
+  color: #b84f45;
+}
+
+/* Индикаторы заметок в календаре */
+.calendar-day {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.day-indicators {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.day-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.day-dot.personal {
+  background: #d78065;
+}
+
+.day-dot.work {
+  background: #78a36b;
+}
+
+.day-dot.study {
+  background: #a587c9;
+}
